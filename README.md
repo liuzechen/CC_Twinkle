@@ -1,9 +1,12 @@
 ![image](https://github.com/liuzechen/CC_Twinkle/raw/master/twinkle.gif)
 
-# Twinkle(oc) :sparkles:
-## 原创地址(swift):https://github.com/piemonte/Twinkle
+# Twinkle(swift)原创地址:https://github.com/piemonte/Twinkle
 
-```使用
+## Twinkle(oc) :sparkles:
+
+```
+CC_Twinkle是仿Twinkle写的oc版
+
 #import "UIView+Twinkle.h"
 [UIView实例 twinkle];
 ```	
