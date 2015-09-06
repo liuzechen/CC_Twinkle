@@ -14,6 +14,9 @@
 		028EAEDB1B9C2C4C005FCC1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028EAEDA1B9C2C4C005FCC1B /* Images.xcassets */; };
 		028EAEDE1B9C2C4C005FCC1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 028EAEDC1B9C2C4C005FCC1B /* LaunchScreen.xib */; };
 		028EAEEA1B9C2C4C005FCC1B /* TwinkleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 028EAEE91B9C2C4C005FCC1B /* TwinkleTests.m */; };
+		028EAEFB1B9C2DBC005FCC1B /* UIView+Twinkle.m in Sources */ = {isa = PBXBuildFile; fileRef = 028EAEFA1B9C2DBC005FCC1B /* UIView+Twinkle.m */; };
+		028EAEFE1B9C2E14005FCC1B /* TwinkleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 028EAEFD1B9C2E14005FCC1B /* TwinkleLayer.m */; };
+		028EAF061B9C339F005FCC1B /* TwinkleLayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 028EAF051B9C339F005FCC1B /* TwinkleLayer+Anim.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		028EAEE31B9C2C4C005FCC1B /* TwinkleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwinkleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		028EAEE81B9C2C4C005FCC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		028EAEE91B9C2C4C005FCC1B /* TwinkleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwinkleTests.m; sourceTree = "<group>"; };
+		028EAEF91B9C2DBC005FCC1B /* UIView+Twinkle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Twinkle.h"; sourceTree = "<group>"; };
+		028EAEFA1B9C2DBC005FCC1B /* UIView+Twinkle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Twinkle.m"; sourceTree = "<group>"; };
+		028EAEFC1B9C2E14005FCC1B /* TwinkleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwinkleLayer.h; sourceTree = "<group>"; };
+		028EAEFD1B9C2E14005FCC1B /* TwinkleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwinkleLayer.m; sourceTree = "<group>"; };
+		028EAF041B9C339F005FCC1B /* TwinkleLayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TwinkleLayer+Anim.h"; sourceTree = "<group>"; };
+		028EAF051B9C339F005FCC1B /* TwinkleLayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TwinkleLayer+Anim.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 				028EAECB1B9C2C4C005FCC1B /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		028EAECB1B9C2C4C005FCC1B /* Products */ = {
 			isa = PBXGroup;
@@ -81,6 +91,7 @@
 		028EAECC1B9C2C4C005FCC1B /* Twinkle */ = {
 			isa = PBXGroup;
 			children = (
+				028EAEF81B9C2DBC005FCC1B /* src */,
 				028EAED11B9C2C4C005FCC1B /* AppDelegate.h */,
 				028EAED21B9C2C4C005FCC1B /* AppDelegate.m */,
 				028EAED41B9C2C4C005FCC1B /* ViewController.h */,
@@ -117,6 +128,19 @@
 				028EAEE81B9C2C4C005FCC1B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		028EAEF81B9C2DBC005FCC1B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				028EAEFC1B9C2E14005FCC1B /* TwinkleLayer.h */,
+				028EAEFD1B9C2E14005FCC1B /* TwinkleLayer.m */,
+				028EAEF91B9C2DBC005FCC1B /* UIView+Twinkle.h */,
+				028EAEFA1B9C2DBC005FCC1B /* UIView+Twinkle.m */,
+				028EAF041B9C339F005FCC1B /* TwinkleLayer+Anim.h */,
+				028EAF051B9C339F005FCC1B /* TwinkleLayer+Anim.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028EAEFE1B9C2E14005FCC1B /* TwinkleLayer.m in Sources */,
 				028EAED61B9C2C4C005FCC1B /* ViewController.m in Sources */,
+				028EAEFB1B9C2DBC005FCC1B /* UIView+Twinkle.m in Sources */,
+				028EAF061B9C339F005FCC1B /* TwinkleLayer+Anim.m in Sources */,
 				028EAED31B9C2C4C005FCC1B /* AppDelegate.m in Sources */,
 				028EAED01B9C2C4C005FCC1B /* main.m in Sources */,
 			);

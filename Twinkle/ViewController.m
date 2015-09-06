@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Twinkle.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *touchView;
 
 @end
 
@@ -16,12 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _touchView.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:32];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)handleButton:(id)sender {
+    UIButton *btn = (UIButton *)sender;
+    [btn twinkle];
 }
 
 @end
