@@ -1,4 +1,4 @@
-![image](https://github.com/liuzechen/CCRefresh-master/raw/master/twinkle.gif)
+![image](https://github.com/liuzechen/CC_Twinkle/raw/master/twinkle.gif)
 
 # Twinkle(oc) :sparkles:
 ## 原创地址(swift):https://github.com/piemonte/Twinkle
