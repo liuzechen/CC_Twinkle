@@ -10,4 +10,4 @@ CC_Twinkle是仿Twinkle写的oc版
 #import "UIView+Twinkle.h"
 [UIView实例 twinkle];
 ```	
-##### 注: 仅供个人研究学习, 如他人商用无本人无关!
+##### 注: 仅供个人研究学习!
