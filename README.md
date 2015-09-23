@@ -30,22 +30,21 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-[super viewDidLoad];
-// 设置Button标题
-_touchView.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:32];
+    [super viewDidLoad];
+    // 设置Button标题
+    _touchView.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:32];
 }
 
 - (IBAction)handleButton:(id)sender {
-UIButton *btn = (UIButton *)sender;
-// 动画开始
-[btn twinkle];
+    UIButton *btn = (UIButton *)sender;
+    // 动画开始
+    [btn twinkle];
 }
 
 @end
-
 ```	
 #### 作者
 刘泽琛, 1040981145@qq.com
 
-### 链接
+#### 链接
 > 1.网易新闻version5.3.4下拉刷新控件: https://github.com/liuzechen/CCEaseRefresh
