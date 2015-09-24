@@ -7,31 +7,9 @@
 `CC_Twinkle`是仿`Twinkle`写的OC版
 
 ```
-#import "ViewController.h"
-#import "UIView+Twinkle.h"
-
-@interface ViewController ()
-
-// UIView子类UIButton
-@property (weak, nonatomic) IBOutlet UIButton *touchView;
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // 设置Button标题
-    _touchView.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Regular" size:32];
-}
-
-- (IBAction)handleButton:(id)sender {
-    UIButton *btn = (UIButton *)sender;
-    // 动画开始
-    [btn twinkle];
-}
-
-@end
+UIView *view = [UIView alloc] initWithFrame ...
+[self.view addSubview:view];
+[view twinkle];
 ```	
 #### 作者
 刘泽琛, 1040981145@qq.com
